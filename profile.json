@@ -1,0 +1,25 @@
+{
+  "terminal.integrated.profiles.windows": {
+    "Custom Init": {
+      "path": "pwsh.exe",
+      "args": [
+         "-noexit",
+         "-file",
+         "${env:APPDATA}\\PowerShell\\custom-init.ps1"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Custom Init"
+}
+
+{
+  "terminal.integrated.profiles.windows": {
+    "Debian (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": [
+        "-d",
+        "Debian"
+      ]
+    }
+  }
+}
